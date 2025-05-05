@@ -85,7 +85,7 @@ $(document).ready(function () {
     dots: false,
     variableWidth: false,
     centerMode: true,
-    // centerPadding: '60px',
+    centerPadding: '100px',
     pauseOnHover: false,
     responsive: [
       { breakpoint: 768, settings: { slidesToShow: 4 } },
@@ -102,7 +102,7 @@ $(document).ready(function () {
     dots: false,
     variableWidth: false,
     centerMode: true,
-    // centerPadding: '60px',
+    centerPadding: '100px',
     pauseOnHover: false,
     rtl: true, // bottom slider moves in opposite direction
     responsive: [
