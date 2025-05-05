@@ -486,21 +486,32 @@ a.hero-btn-03 {
 
 /* hero main form  */
 .hero-form-input form {
-    display: inline-grid;
-    gap: 10px;
+    display: inline-block;
+    /* gap: 10px; */
 }
 
 .hero-form-input label {
     display: inline-grid !important;
     background: #ffffff;
     position: relative;
-    top: 20px;
-    left: 10px;
+    bottom: 20px;
+    left: 70px;
     text-align: center;
-    width: 30%;
+    /* width: 30%; */
     padding: 5px;
     border-radius: 10px;
 }
+
+.hero-form-input input {
+    padding: 0.5rem;
+    border: double 3px transparent;
+    border-radius: 6px;
+    background-image: linear-gradient(white, white), linear-gradient(90deg, #89D501 0%, #33B1AD 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    margin: 10px 0;
+}
+
 
 
 
