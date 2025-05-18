@@ -115,3 +115,102 @@ $(document).ready(function () {
 AOS.init({
   duration: 1200,
 })
+
+
+// company slider
+// logo slider
+
+$(document).ready(function () {
+
+  $(".menu").click(function () {
+      $(".main_nav").toggleClass("active");
+      $("body").toggleClass("active");
+  });
+
+  $('.slider').slick({
+
+      infinite: true,
+      slidesToShow: 4,
+      slidesToScroll: 1,
+      dots: false,
+      autoplay: true,
+      autoplaySpeed: 0,
+      speed: 2000,
+      arrows: false,
+      responsive: [
+          {
+              breakpoint: 1024,
+              settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: false,
+              }
+          },
+          {
+              breakpoint: 768,
+              settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                  infinite: false,
+              }
+          },
+          {
+              breakpoint: 480,
+              settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1
+              }
+          }
+      ]
+  });
+
+});
+
+// service slider
+$(document).ready(function () {
+
+  $(".menu").click(function () {
+      $(".main_nav").toggleClass("active");
+      $("body").toggleClass("active");
+  });
+
+  $('.slider-service').slick({
+
+      infinite: true,
+      slidesToShow: 2,
+      slidesToScroll: 1,
+      dots: false,
+      autoplay: false,
+      autoplaySpeed: 0,
+      speed: 3000,
+      arrows: false,
+      responsive: [
+          {
+              breakpoint: 1024,
+              settings: {
+                  slidesToShow: 2,
+                  slidesToScroll: 1,
+                  infinite: true,
+                  dots: false,
+              }
+          },
+          {
+              breakpoint: 767,
+              settings: {
+                  slidesToShow: 1,
+                  slidesToScroll: 1,
+                  infinite: false,
+              }
+          },
+          // {
+          //     breakpoint: 480,
+          //     settings: {
+          //         slidesToShow: 1,
+          //         slidesToScroll: 1
+          //     }
+          // }
+      ]
+  });
+
+});
