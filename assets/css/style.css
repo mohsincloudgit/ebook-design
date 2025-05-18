@@ -408,7 +408,7 @@ a.main-btn-08:hover {
 }
 
 .navbar-expand-lg .navbar-collapse {
-    margin: 0px 60px;
+    /* margin: 0px 60px; */
 }
 
 .scrolled {
@@ -550,21 +550,32 @@ a.hero-btn-03 {
 
 /* hero main form  */
 .hero-form-input form {
-    display: inline-grid;
-    gap: 10px;
+    display: inline-block;
+    /* gap: 10px; */
 }
 
 .hero-form-input label {
     display: inline-grid !important;
     background: #ffffff;
     position: relative;
-    top: 20px;
-    left: 10px;
+    bottom: 20px;
+    left: 70px;
     text-align: center;
-    width: 30%;
+    /* width: 30%; */
     padding: 5px;
     border-radius: 10px;
 }
+
+.hero-form-input input {
+    padding: 0.5rem;
+    border: double 3px transparent;
+    border-radius: 6px;
+    background-image: linear-gradient(white, white), linear-gradient(90deg, #89D501 0%, #33B1AD 100%);
+    background-origin: border-box;
+    background-clip: padding-box, border-box;
+    margin: 10px 0;
+}
+
 
 
 
@@ -705,17 +716,17 @@ justify-self: center; */
     align-items: center;
     justify-content: center;
     display: flex;
-
+    position: relative;
 }
 
 .service-sec-3 img {
     position: absolute;
     /* width: 231px; */
     /* z-index: 99; */
-    top: 1300px;
-    left: 170px;
+    top: -70px;
+    /* left: 170px;
     bottom: 0;
-    right: 0;
+    right: 0; */
 }
 
 .service-main-content-3 h2 {
@@ -883,25 +894,24 @@ justify-self: center; */
 
 .hori-slider-wrapper {
     padding: 20px 0;
+    position: relative;
     /* background: #f5f5f5; */
 }
 
 .hori-slider-content {
-
     position: absolute;
-    width: 250px;
-    height: 250px;
-    /* left: calc(50% - 270px/2);
-    top: calc(50% - 270px/2 - 1170.28px); */
+    width: 240px;
+    height: 240px;
     z-index: 99;
     background: linear-gradient(90deg, #6EAC00 -46.98%, #27A9A5 115.95%);
     border-radius: 135px;
-    top: 2870px;
-    right: 0;
-    left: 0;
-    bottom: 0;
+    /* top: 0; */
+    right: 50%;
+    /* left: 0; */
+    /* bottom: 0; */
     align-content: center;
     justify-self: center;
+    transform: translate(50%, -50%);
 }
 
 .hori-slider-content h2 {
